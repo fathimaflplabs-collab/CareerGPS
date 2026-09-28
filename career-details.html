@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CareerGPS - Career Details</title>
+
+    <link rel="stylesheet" href="career-details.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header>
+
+        <div class="logo">
+            Career<span>GPS</span>
+        </div>
+
+        <button
+            class="back-button"
+            onclick="goBackToResults()">
+
+            ← Back to Career Paths
+
+        </button>
+
+    </header>
+
+
+
+    <!-- ==============================
+         MAIN CONTENT
+    =============================== -->
+
+    <main class="career-details-container">
+
+
+        <!-- ==============================
+             CAREER HERO
+        ============================== -->
+
+        <section class="career-hero">
+
+            <div class="career-icon"
+                 id="careerIcon">
+
+                🤖
+
+            </div>
+
+
+            <div class="career-hero-content">
+
+                <div class="section-label">
+                    CAREER PATHWAY
+                </div>
+
+                <h1 id="careerName">
+                    Career Name
+                </h1>
+
+                <p id="careerDescription">
+                    Career description will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             WHY THIS CAREER
+        ============================== -->
+
+        <section class="details-section">
+
+            <div class="section-label">
+                WHY THIS PATHWAY?
+            </div>
+
+            <h2>
+                Why CareerGPS showed you this career
+            </h2>
+
+            <p id="careerReason">
+                Your profile information connects with
+                this career pathway.
+            </p>
+
+        </section>
+
+
+
+        <!-- ==============================
+             CAREER OVERVIEW
+        ============================== -->
+
+        <section class="details-section">
+
+            <div class="section-label">
+                CAREER OVERVIEW
+            </div>
+
+            <h2>
+                What does this career involve?
+            </h2>
+
+            <p id="careerOverview">
+                Career information will appear here.
+            </p>
+
+        </section>
+
+
+
+        <!-- ==============================
+             SKILLS
+        ============================== -->
+
+        <section class="skills-grid">
+
+
+            <!-- Current Skills -->
+
+            <div class="skill-box">
+
+                <div class="section-label">
+                    YOU ALREADY HAVE
+                </div>
+
+                <h2>
+                    Matching Skills
+                </h2>
+
+                <div
+                    id="currentSkills"
+                    class="skill-list">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Skills To Develop -->
+
+            <div class="skill-box">
+
+                <div class="section-label">
+                    NEXT TO DEVELOP
+                </div>
+
+                <h2>
+                    Skills You May Need
+                </h2>
+
+                <div
+                    id="futureSkills"
+                    class="skill-list">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             SKILL GAP ANALYSIS
+        =============================== -->
+
+        <section class="skill-gap-section">
+
+            <div class="section-label">
+                SKILL GAP ANALYSIS
+            </div>
+
+            <h2>
+                Your Career Skill Gap
+            </h2>
+
+            <p class="skill-gap-intro">
+                CareerGPS compares your current skills with
+                the skills commonly associated with this
+                career pathway.
+            </p>
+
+
+            <!-- Skill Progress -->
+
+            <div class="skill-progress-card">
+
+                <div class="progress-header">
+
+                    <div>
+
+                        <span class="progress-label">
+                            YOUR CURRENT MATCH
+                        </span>
+
+                        <h3 id="skillMatchPercentage">
+                            0%
+                        </h3>
+
+                    </div>
+
+
+                    <div
+                        id="skillMatchMessage"
+                        class="progress-message">
+
+                        Calculating your skill match...
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        id="skillProgressBar"
+                        class="progress-fill">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Skill Gap Columns -->
+
+            <div class="skill-gap-grid">
+
+
+                <!-- Skills You Have -->
+
+                <div class="gap-box">
+
+                    <div class="gap-icon">
+                        ✓
+                    </div>
+
+                    <div class="section-label">
+                        YOU HAVE
+                    </div>
+
+                    <h3>
+                        Existing Skills
+                    </h3>
+
+                    <div
+                        id="gapCurrentSkills"
+                        class="gap-skill-list">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Skills To Learn -->
+
+                <div class="gap-box">
+
+                    <div class="gap-icon">
+                        +
+                    </div>
+
+                    <div class="section-label">
+                        BUILD NEXT
+                    </div>
+
+                    <h3>
+                        Skills To Develop
+                    </h3>
+
+                    <div
+                        id="gapFutureSkills"
+                        class="gap-skill-list">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             RECOMMENDED LEARNING ROADMAP
+        =============================== -->
+
+        <section class="learning-roadmap-section">
+
+            <div class="section-label">
+                PERSONALIZED LEARNING
+            </div>
+
+            <h2>
+                Recommended Learning Roadmap
+            </h2>
+
+            <p class="learning-roadmap-intro">
+                Based on your current skill gap, CareerGPS
+                suggests a learning sequence to help you
+                move toward this career pathway.
+            </p>
+
+
+            <!-- ==============================
+                 ROADMAP
+            =============================== -->
+
+            <div
+                id="learningRoadmap"
+                class="learning-roadmap">
+
+                <!-- Learning steps will be
+                     generated by career-details.js -->
+
+            </div>
+
+
+            <!-- ==============================
+                 NEXT STEP
+            =============================== -->
+
+            <div class="learning-next-step">
+
+                <div class="next-step-icon">
+                    🚀
+                </div>
+
+                <div class="next-step-content">
+
+                    <div class="section-label">
+                        RECOMMENDED NEXT STEP
+                    </div>
+
+                    <h3 id="recommendedNextSkill">
+                        Your next learning step will appear here.
+                    </h3>
+
+                    <p id="recommendedNextDescription">
+                        CareerGPS will identify the next skill
+                        you can focus on based on your current
+                        skill gap.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             ENTRY ROLES
+        =============================== -->
+
+        <section class="details-section">
+
+            <div class="section-label">
+                GETTING STARTED
+            </div>
+
+            <h2>
+                Possible Entry-Level Roles
+            </h2>
+
+            <div
+                id="entryRoles"
+                class="role-list">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             LEARNING
+        ============================== -->
+
+        <section class="details-section">
+
+            <div class="section-label">
+                LEARNING PATH
+            </div>
+
+            <h2>
+                What can you learn next?
+            </h2>
+
+            <div
+                id="learningOptions"
+                class="learning-list">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             CAREER JOURNEY
+        ============================== -->
+
+        <section class="journey-section">
+
+            <div class="section-label">
+                POSSIBLE CAREER JOURNEY
+            </div>
+
+            <h2>
+                Where could this pathway lead?
+            </h2>
+
+            <p>
+                Career progression can vary by industry,
+                organization, qualifications and experience.
+                This is an example pathway to explore.
+            </p>
+
+
+            <div
+                id="careerJourney"
+                class="career-journey">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             ACTION
+        =============================== -->
+
+        <section class="action-section">
+
+            <h2>
+                Want to explore another pathway?
+            </h2>
+
+            <p>
+                Go back to your career recommendations
+                and explore another possibility.
+            </p>
+
+            <button
+                onclick="goBackToResults()"
+                class="explore-button">
+
+                Explore Other Careers →
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer>
+
+        <p>
+            © 2026 CareerGPS | Career Discovery Platform
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    =============================== -->
+
+    <script src="career-details.js"></script>
+
+</body>
+
+</html>

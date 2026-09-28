@@ -1,0 +1,671 @@
+/* =====================================================
+   CAREERGPS PROFILE PAGE
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(23, 105, 224, 0.08),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(0, 166, 166, 0.07),
+            transparent 25%
+        ),
+
+        #f5f8fd;
+
+    color: #172033;
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    position: sticky;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid #e5ebf4;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+
+    font-weight: 800;
+
+    color: #173b8f;
+}
+
+
+.logo span {
+    color: #08a6a6;
+}
+
+
+.back-home {
+    text-decoration: none;
+
+    color: #1769e0;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.back-home:hover {
+    color: #00a6a6;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+============================== */
+
+.profile-container {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 70px 25px 100px;
+}
+
+
+/* ==============================
+   PAGE HEADING
+============================== */
+
+.page-heading {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+}
+
+
+.step-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 7px 13px;
+
+    border-radius: 30px;
+
+    background: #e8f1ff;
+
+    color: #1769e0;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.page-heading h1 {
+    font-size: clamp(2.3rem, 5vw, 3.8rem);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #173b8f,
+        #1769e0,
+        #00a6a6
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.page-heading p {
+    color: #64748b;
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+}
+
+
+/* ==============================
+   PROGRESS
+============================== */
+
+.progress-container {
+    margin-bottom: 35px;
+}
+
+
+.progress-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    color: #64748b;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+}
+
+
+.progress-bar {
+    width: 100%;
+
+    height: 7px;
+
+    background: #e5ebf4;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+#progressFill {
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #1769e0,
+        #00a6a6
+    );
+
+    transition: width 0.3s ease;
+}
+
+
+/* ==============================
+   FORM SECTION
+============================== */
+
+.form-section {
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid #e3eaf3;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 35px rgba(28, 52, 84, 0.055);
+}
+
+
+.section-heading {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+.section-number {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #e8f1ff,
+        #e4fbfa
+    );
+
+    color: #1769e0;
+
+    font-size: 0.85rem;
+
+    font-weight: 800;
+}
+
+
+.section-heading h2 {
+    font-size: 1.4rem;
+
+    margin-bottom: 6px;
+
+    color: #172033;
+}
+
+
+.section-heading p {
+    color: #64748b;
+
+    font-size: 0.88rem;
+}
+
+
+/* ==============================
+   FORM GROUP
+============================== */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+
+.form-group > label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #334155;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+}
+
+
+.form-group > label span {
+    color: #e05252;
+}
+
+
+/* ==============================
+   INPUTS
+============================== */
+
+select,
+input[type="text"],
+textarea {
+    width: 100%;
+
+    border: 1px solid #dce4ef;
+
+    border-radius: 11px;
+
+    padding: 13px 15px;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+select {
+    cursor: pointer;
+}
+
+
+textarea {
+    resize: vertical;
+
+    min-height: 100px;
+}
+
+
+select:focus,
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #1769e0;
+
+    box-shadow:
+        0 0 0 4px rgba(23, 105, 224, 0.08);
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #9aa7b8;
+}
+
+
+/* ==============================
+   CHECKBOX GRID
+============================== */
+
+.checkbox-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+/* Checkbox card */
+
+.checkbox-card {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 52px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #e1e8f1;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.checkbox-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #9ebce9;
+
+    background: #f8fbff;
+}
+
+
+.checkbox-card input {
+    width: 17px;
+
+    height: 17px;
+
+    margin-right: 10px;
+
+    accent-color: #1769e0;
+
+    cursor: pointer;
+}
+
+
+.checkbox-card span {
+    color: #475569;
+
+    font-size: 0.85rem;
+
+    font-weight: 500;
+}
+
+
+.checkbox-card:has(input:checked) {
+    border-color: #1769e0;
+
+    background: #eef5ff;
+
+    box-shadow:
+        0 5px 15px rgba(23, 105, 224, 0.08);
+}
+
+
+.checkbox-card:has(input:checked) span {
+    color: #1769e0;
+
+    font-weight: 600;
+}
+
+
+/* ==============================
+   WORKING PROFESSIONAL FIELDS
+============================== */
+
+.professional-fields {
+    padding: 22px;
+
+    margin-top: 5px;
+
+    border-radius: 15px;
+
+    background: #f5f9ff;
+
+    border: 1px solid #e2ebf7;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+/* ==============================
+   SUBMIT AREA
+============================== */
+
+.submit-area {
+    text-align: center;
+
+    padding: 25px 10px;
+}
+
+
+.discover-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    border: none;
+
+    padding: 17px 32px;
+
+    border-radius: 13px;
+
+    background: linear-gradient(
+        135deg,
+        #1557d6,
+        #1769e0,
+        #00a6a6
+    );
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 0.98rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 15px 35px rgba(23, 105, 224, 0.22);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.discover-button span {
+    font-size: 1.2rem;
+
+    transition: transform 0.3s ease;
+}
+
+
+.discover-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 20px 45px rgba(23, 105, 224, 0.3);
+}
+
+
+.discover-button:hover span {
+    transform: translateX(5px);
+}
+
+
+.submit-area p {
+    margin-top: 15px;
+
+    color: #94a3b8;
+
+    font-size: 0.78rem;
+
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 800px) {
+
+    .checkbox-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .profile-container {
+        padding-top: 50px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .back-home {
+        font-size: 0.78rem;
+    }
+
+    .profile-container {
+        padding: 40px 15px 70px;
+    }
+
+    .form-section {
+        padding: 25px 20px;
+
+        border-radius: 17px;
+    }
+
+    .section-heading {
+        gap: 12px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.2rem;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 2.4rem;
+
+        letter-spacing: -1.5px;
+    }
+
+    .discover-button {
+        width: 100%;
+    }
+
+}

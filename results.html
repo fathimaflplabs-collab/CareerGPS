@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CareerGPS - Your Career Paths</title>
+
+    <link rel="stylesheet" href="results.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header>
+
+        <div class="logo">
+            Career<span>GPS</span>
+        </div>
+
+        <div class="nav-actions">
+
+            <button
+                onclick="goBackToProfile()"
+                class="edit-profile">
+
+                ✎ Edit Profile
+
+            </button>
+
+            <button
+                onclick="startOver()"
+                class="start-over">
+
+                Start Over
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==============================
+         MAIN
+    =============================== -->
+
+    <main class="results-container">
+
+
+        <!-- ==============================
+             WELCOME
+        =============================== -->
+
+        <section class="welcome-section">
+
+            <div class="welcome-label">
+                YOUR CAREER GPS
+            </div>
+
+            <h1>
+                Your Possible Career Paths
+            </h1>
+
+            <p id="welcomeText">
+
+                Based on your profile, here are some
+                career directions you can explore.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- ==============================
+             PROFILE SUMMARY
+        =============================== -->
+
+        <section class="profile-summary">
+
+            <div class="summary-title">
+
+                <h2>
+                    Your Profile Snapshot
+                </h2>
+
+                <p>
+                    The information CareerGPS used
+                    to understand your current position.
+                </p>
+
+            </div>
+
+
+            <div class="summary-grid">
+
+
+                <div class="summary-card">
+
+                    <span class="summary-icon">
+                        🎓
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Education
+                        </small>
+
+                        <strong id="summaryEducation">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="summary-card">
+
+                    <span class="summary-icon">
+                        💼
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Current Role
+                        </small>
+
+                        <strong id="summaryRole">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="summary-card">
+
+                    <span class="summary-icon">
+                        🧠
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Skills
+                        </small>
+
+                        <strong id="summarySkills">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="summary-card">
+
+                    <span class="summary-icon">
+                        📍
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Location
+                        </small>
+
+                        <strong id="summaryLocation">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             CAREER PATHS
+        =============================== -->
+
+        <section class="career-section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <div class="section-label">
+                        DISCOVER
+                    </div>
+
+                    <h2>
+                        Career Pathways You Can Explore
+                    </h2>
+
+                </div>
+
+                <span
+                    id="careerCount"
+                    class="career-count">
+
+                    0 paths
+
+                </span>
+
+            </div>
+
+
+            <div
+                id="careerResults"
+                class="career-results">
+
+                <!-- Career cards will be
+                     created by JavaScript -->
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==============================
+             YOUR SKILLS
+        =============================== -->
+
+        <section class="skills-section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <div class="section-label">
+                        SKILL ANALYSIS
+                    </div>
+
+                    <h2>
+                        Your Current Skills
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="skillsContainer"
+                class="skills-container">
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==============================
+             NEXT STEP
+        =============================== -->
+
+        <section class="next-section">
+
+            <div>
+
+                <div class="section-label">
+                    WHAT'S NEXT?
+                </div>
+
+                <h2>
+                    Your career journey is just beginning.
+                </h2>
+
+                <p>
+                    Explore the suggested pathways and identify
+                    the skills and experiences that can help you
+                    move toward your next career goal.
+                </p>
+
+            </div>
+
+
+            <button
+                onclick="goBackToProfile()"
+                class="next-button">
+
+                Refine My Profile →
+                
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 CareerGPS | Career Discovery Platform
+        </p>
+
+    </footer>
+
+
+
+    <script src="results.js"></script>
+
+</body>
+
+</html>

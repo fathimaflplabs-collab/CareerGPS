@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CareerGPS - Build Your Career Profile</title>
+
+    <link rel="stylesheet" href="profile.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header>
+
+        <div class="logo">
+            Career<span>GPS</span>
+        </div>
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </header>
+
+
+
+    <!-- ==============================
+         MAIN PROFILE CONTAINER
+    =============================== -->
+
+    <main class="profile-container">
+
+
+        <!-- Page Heading -->
+
+        <div class="page-heading">
+
+            <div class="step-label">
+                CAREER JOURNEY • STEP 1
+            </div>
+
+            <h1>
+                Build Your Career Profile
+            </h1>
+
+            <p>
+                Tell us about your education, skills, interests
+                and experience. CareerGPS will use this information
+                to discover possible career pathways for you.
+            </p>
+
+        </div>
+
+
+
+        <!-- Progress Bar -->
+
+        <div class="progress-container">
+
+            <div class="progress-info">
+
+                <span>Profile Progress</span>
+
+                <span id="progressText">
+                    0%
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==============================
+             FORM
+        =============================== -->
+
+        <form id="careerForm">
+
+
+            <!-- =================================
+                 SECTION 1 - EDUCATION
+            ================================== -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Your Education
+                        </h2>
+
+                        <p>
+                            Tell us where you are in your educational journey.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Education Level -->
+
+                <div class="form-group">
+
+                    <label for="educationLevel">
+                        Current Education Level
+                        <span>*</span>
+                    </label>
+
+                    <select id="educationLevel"
+                            name="educationLevel"
+                            required>
+
+                        <option value="">
+                            Select your education level
+                        </option>
+
+                        <option value="10th">
+                            10th / Secondary School
+                        </option>
+
+                        <option value="plus-two">
+                            +2 / Higher Secondary
+                        </option>
+
+                        <option value="diploma">
+                            Diploma
+                        </option>
+
+                        <option value="undergraduate">
+                            Undergraduate / Bachelor's Degree
+                        </option>
+
+                        <option value="postgraduate">
+                            Postgraduate / Master's Degree
+                        </option>
+
+                        <option value="phd">
+                            PhD / Doctoral
+                        </option>
+
+                        <option value="working">
+                            Working Professional
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Stream -->
+
+                <div class="form-group">
+
+                    <label for="stream">
+                        Stream / Specialization
+                        <span>*</span>
+                    </label>
+
+                    <select id="stream"
+                            name="stream"
+                            required>
+
+                        <option value="">
+                            Select your stream
+                        </option>
+
+                        <option value="bio-maths">
+                            +2 Bio-Maths
+                        </option>
+
+                        <option value="computer-science">
+                            +2 Computer Science
+                        </option>
+
+                        <option value="commerce">
+                            Commerce
+                        </option>
+
+                        <option value="humanities">
+                            Humanities / Arts
+                        </option>
+
+                        <option value="science">
+                            Science
+                        </option>
+
+                        <option value="engineering">
+                            Engineering
+                        </option>
+
+                        <option value="electronics">
+                            Electronics
+                        </option>
+
+                        <option value="computer-science-degree">
+                            Computer Science / IT
+                        </option>
+
+                        <option value="business">
+                            Business / Management
+                        </option>
+
+                        <option value="biology">
+                            Biology / Life Science
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Subjects -->
+
+                <div class="form-group">
+
+                    <label>
+                        Subjects / Areas You Studied
+                    </label>
+
+                    <div class="checkbox-grid">
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="subjects"
+                                   value="Mathematics">
+
+                            <span>
+                                Mathematics
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="subjects"
+                                   value="Biology">
+
+                            <span>
+                                Biology
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="subjects"
+                                   value="Physics">
+
+                            <span>
+                                Physics
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="subjects"
+                                   value="Chemistry">
+
+                            <span>
+                                Chemistry
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="subjects"
+                                   value="Computer Science">
+
+                            <span>
+                                Computer Science
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="subjects"
+                                   value="Commerce">
+
+                            <span>
+                                Commerce
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="subjects"
+                                   value="Electronics">
+
+                            <span>
+                                Electronics
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="subjects"
+                                   value="Other">
+
+                            <span>
+                                Other
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 SECTION 2 - SKILLS
+            ================================== -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Your Skills
+                        </h2>
+
+                        <p>
+                            Select the skills you currently have or are developing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="checkbox-grid">
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Programming">
+
+                        <span>Programming</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Electronics">
+
+                        <span>Electronics</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Robotics">
+
+                        <span>Robotics</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Communication">
+
+                        <span>Communication</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Teaching">
+
+                        <span>Teaching</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Leadership">
+
+                        <span>Leadership</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Problem Solving">
+
+                        <span>Problem Solving</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Research">
+
+                        <span>Research</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Design">
+
+                        <span>Design</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Management">
+
+                        <span>Management</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Data Analysis">
+
+                        <span>Data Analysis</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="skills"
+                               value="Writing">
+
+                        <span>Writing</span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 SECTION 3 - INTERESTS
+            ================================== -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Your Interests
+                        </h2>
+
+                        <p>
+                            What areas are you naturally interested in?
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="checkbox-grid">
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Technology">
+
+                        <span>Technology</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Healthcare">
+
+                        <span>Healthcare</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Robotics">
+
+                        <span>Robotics</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Education">
+
+                        <span>Education</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Business">
+
+                        <span>Business</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Research">
+
+                        <span>Research</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Design">
+
+                        <span>Design</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Finance">
+
+                        <span>Finance</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Environment">
+
+                        <span>Environment</span>
+
+                    </label>
+
+
+                    <label class="checkbox-card">
+
+                        <input type="checkbox"
+                               name="interests"
+                               value="Media">
+
+                        <span>Media</span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 SECTION 4 - EXPERIENCE
+            ================================== -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        04
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Experience
+                        </h2>
+
+                        <p>
+                            This section also supports working professionals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Currently Working -->
+
+                <div class="form-group">
+
+                    <label for="workingStatus">
+                        Are you currently working?
+                        <span>*</span>
+                    </label>
+
+                    <select id="workingStatus"
+                            name="workingStatus"
+                            required>
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="no">
+                            No, I am a student / currently not working
+                        </option>
+
+                        <option value="yes">
+                            Yes, I am currently working
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Current Job -->
+
+                <div id="professionalFields"
+                     class="professional-fields hidden">
+
+                    <div class="form-group">
+
+                        <label for="currentJob">
+                            Current Job / Role
+                        </label>
+
+                        <input
+                            type="text"
+                            id="currentJob"
+                            name="currentJob"
+                            placeholder="Example: Robotics Trainer">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="experienceYears">
+                            Years of Experience
+                        </label>
+
+                        <select id="experienceYears"
+                                name="experienceYears">
+
+                            <option value="">
+                                Select experience
+                            </option>
+
+                            <option value="less-than-1">
+                                Less than 1 year
+                            </option>
+
+                            <option value="1-2">
+                                1–2 years
+                            </option>
+
+                            <option value="2-5">
+                                2–5 years
+                            </option>
+
+                            <option value="5-10">
+                                5–10 years
+                            </option>
+
+                            <option value="10+">
+                                More than 10 years
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="responsibilities">
+                            What do you currently do?
+                        </label>
+
+                        <textarea
+                            id="responsibilities"
+                            name="responsibilities"
+                            rows="4"
+                            placeholder="Example: Teach robotics, coordinate school programs, communicate with teachers and manage student activities."></textarea>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 SECTION 5 - PREFERENCES
+            ================================== -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        05
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Your Preferences
+                        </h2>
+
+                        <p>
+                            Tell us what matters when choosing your future path.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Location -->
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Preferred Location
+                        <span>*</span>
+                    </label>
+
+                    <select id="location"
+                            name="location"
+                            required>
+
+                        <option value="">
+                            Select location preference
+                        </option>
+
+                        <option value="local">
+                            Near my locality
+                        </option>
+
+                        <option value="kerala">
+                            Kerala
+                        </option>
+
+                        <option value="india">
+                            Anywhere in India
+                        </option>
+
+                        <option value="abroad">
+                            Abroad
+                        </option>
+
+                        <option value="anywhere">
+                            No specific preference
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Budget -->
+
+                <div class="form-group">
+
+                    <label for="budget">
+                        Education / Learning Budget
+                        <span>*</span>
+                    </label>
+
+                    <select id="budget"
+                            name="budget"
+                            required>
+
+                        <option value="">
+                            Select your approximate budget
+                        </option>
+
+                        <option value="below-50000">
+                            Below ₹50,000
+                        </option>
+
+                        <option value="50000-100000">
+                            ₹50,000 – ₹1 Lakh
+                        </option>
+
+                        <option value="100000-200000">
+                            ₹1 – ₹2 Lakhs
+                        </option>
+
+                        <option value="200000-500000">
+                            ₹2 – ₹5 Lakhs
+                        </option>
+
+                        <option value="above-500000">
+                            Above ₹5 Lakhs
+                        </option>
+
+                        <option value="scholarship">
+                            Prefer scholarship / financial aid
+                        </option>
+
+                        <option value="not-sure">
+                            Not sure
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Study Duration -->
+
+                <div class="form-group">
+
+                    <label for="duration">
+                        Preferred Study Duration
+                    </label>
+
+                    <select id="duration"
+                            name="duration">
+
+                        <option value="">
+                            Select duration
+                        </option>
+
+                        <option value="short">
+                            Short course / certification
+                        </option>
+
+                        <option value="1-2-years">
+                            1–2 years
+                        </option>
+
+                        <option value="3-years">
+                            Around 3 years
+                        </option>
+
+                        <option value="4-years">
+                            Around 4 years
+                        </option>
+
+                        <option value="5-plus">
+                            5+ years
+                        </option>
+
+                        <option value="any">
+                            No preference
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Career Preferences -->
+
+                <div class="form-group">
+
+                    <label>
+                        What type of career interests you?
+                    </label>
+
+                    <div class="checkbox-grid">
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="careerPreferences"
+                                   value="Private Sector">
+
+                            <span>Private Sector</span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="careerPreferences"
+                                   value="Government">
+
+                            <span>Government</span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="careerPreferences"
+                                   value="Research">
+
+                            <span>Research</span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="careerPreferences"
+                                   value="Teaching">
+
+                            <span>Teaching</span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="careerPreferences"
+                                   value="Entrepreneurship">
+
+                            <span>Entrepreneurship</span>
+
+                        </label>
+
+
+                        <label class="checkbox-card">
+
+                            <input type="checkbox"
+                                   name="careerPreferences"
+                                   value="Freelancing">
+
+                            <span>Freelancing</span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 SECTION 6 - FUTURE GOAL
+            ================================== -->
+
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        06
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Your Future Goal
+                        </h2>
+
+                        <p>
+                            You don't need to know exactly what you want.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="careerGoal">
+                        What best describes your current situation?
+                    </label>
+
+                    <select id="careerGoal"
+                            name="careerGoal">
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="explore">
+                            I want to explore different careers
+                        </option>
+
+                        <option value="choose">
+                            I need help choosing a career
+                        </option>
+
+                        <option value="higher-study">
+                            I want to continue higher studies
+                        </option>
+
+                        <option value="job">
+                            I want to find a job
+                        </option>
+
+                        <option value="career-change">
+                            I want to change my career
+                        </option>
+
+                        <option value="career-growth">
+                            I want to grow in my current career
+                        </option>
+
+                        <option value="entrepreneur">
+                            I want to start something of my own
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="careerDream">
+                        Tell us anything else about your career goal
+                    </label>
+
+                    <textarea
+                        id="careerDream"
+                        name="careerDream"
+                        rows="4"
+                        placeholder="Example: I enjoy technology and teaching, but I want to explore leadership or management roles in the future."></textarea>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 SUBMIT
+            ================================== -->
+
+            <div class="submit-area">
+
+                <button
+                    type="submit"
+                    class="discover-button">
+
+                    Discover My Career Paths
+                    <span>→</span>
+
+                </button>
+
+                <p>
+                    Your profile will be used to generate
+                    personalized career pathway suggestions.
+                </p>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+
+
+    <script src="profile.js"></script>
+
+</body>
+
+</html>
